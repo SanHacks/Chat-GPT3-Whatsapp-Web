@@ -1,0 +1,49 @@
+      body {
+        background: purple; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(purple, black); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(purple, black); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(purple, black); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(purple, black); /* Standard syntax */
+      }
+      
+      #chat {
+        width: 50%;
+        margin: auto;
+      }
+      
+      .msg {
+        padding: 10px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      
+      .ai {
+        background: rgba(0, 0, 0, 0.1);
+        float: left;
+      }
+      
+      .human {
+        background: rgba(0, 0, 0, 0.2);
+        float: right;
+      }
+      
+      #chat-header {
+        background: rgba(0, 0, 0, 0.3);
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+      }
+      
+      ::-webkit-scrollbar {
+        width: 12px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+        border-radius: 10px;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+      }
