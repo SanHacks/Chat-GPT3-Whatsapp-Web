@@ -5,7 +5,7 @@ require __DIR__ . '/vendor/autoload.php';
 
 use Orhanerday\OpenAi\OpenAi;
 
-$open_ai = new OpenAi('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');
+$open_ai = new OpenAi('YOUR_ACCESS_TOKEN');
 
 	include"connect.php";
 if (isset($_POST['msg'])) {

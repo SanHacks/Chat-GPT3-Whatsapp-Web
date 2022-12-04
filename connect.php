@@ -1,10 +1,10 @@
 <?php
-$host = '127.0.0.1';
-$db   = 'gpt3saint';
-$user = 'root';
-$pass = '';
-$port = "3306";
-$charset = 'utf8mb4';
+$host = 'DB_HOST';
+$db   = 'DB_NAME';
+$user = 'DB_USER';
+$pass = 'DB_USER_PASSWORD';
+$port = "3306";//Default
+$charset = 'utf8mb4';//Default
 
 $options = [
     \PDO::ATTR_ERRMODE            => \PDO::ERRMODE_EXCEPTION,
