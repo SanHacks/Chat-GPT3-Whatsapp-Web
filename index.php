@@ -40,7 +40,7 @@ if (isset($_POST['msg'])) {
 
 }
 
-	$searchs = "SELECT * FROM messages  ORDER BY id ASC LIMIT 100 ";
+	$searchs = "SELECT * FROM gptChats  ORDER BY id ASC LIMIT 100 ";
 		$stmt = $pdo->prepare($searchs);
 		$stmt->execute();
 		$QP = $stmt->fetchAll();
@@ -398,7 +398,7 @@ if (isset($_POST['msg'])) {
 						
 					 echo"$them";
 
-					 $saves = "INSERT INTO messages (message,timestamp, message_type) VALUES (?,?,?)";
+					 $saves = "INSERT INTO gptChats (message,timestamp, message_type) VALUES (?,?,?)";
 					//Prepare Statements
 					$spush= $pdo->prepare($saves);
 					//Execution

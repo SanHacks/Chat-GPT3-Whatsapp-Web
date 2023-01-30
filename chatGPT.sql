@@ -3,5 +3,5 @@ CREATE TABLE IF NOT EXISTS `gptChats` (
   `message` int(11) NOT NULL,
   `timestamp` int(11) NOT NULL,
   `message_type` int(11) NOT NULL,
-  PRIMARY KEY (`product_id`,`category_id`)
+  PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
