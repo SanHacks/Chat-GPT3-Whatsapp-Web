@@ -9,16 +9,16 @@ $open_ai = new OpenAi('YOUR_ACCESS_TOKEN');
 
 	include"connect.php";
 if (isset($_POST['msg'])) {
-	$pp = $_POST['msg'];
-	
-		$tshifhinga = time();
-		$metype = "sent";
+
+	    $userInput = $_POST['msg'];
+		$theTime = time();
+		$messageType = "sent";
 		//Save the search record to database
-		$saves = "INSERT INTO messages (message,timestamp, message_type) VALUES (?,?,?)";
+		$saves = "INSERT INTO gptChats (message,timestamp, message_type) VALUES (?,?,?)";
 		//Prepare Statements
 		$spush= $pdo->prepare($saves);
 		//Execution
-		$spush->execute([$pp, $tshifhinga, $metype]);
+		$spush->execute([$userInput, $theTime, $messageType]);
 		
 	$primary = "The following is a conversation with an AI assistant. The assistant is helpful, creative, clever, and very friendly.\n\nHuman: Hello, who are you?
 	\nAI: I am an AI created by OpenAI. How can I help you today?
