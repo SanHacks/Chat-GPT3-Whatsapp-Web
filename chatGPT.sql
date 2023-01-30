@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS `#__jshopping_products_to_categories` (
+CREATE TABLE IF NOT EXISTS `gptChats` (
   `id` int(11) NOT NULL,
   `message` int(11) NOT NULL,
   `timestamp` int(11) NOT NULL,
