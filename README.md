@@ -2,6 +2,18 @@
  
 OpenAI (GPT3) API Usage In PHP.
 
+## Check out the sister project built in Go: 
+<img src="https://user-images.githubusercontent.com/13138647/226470554-a434ebf2-a52b-4861-a5f6-a96285b420b8.png"/>
+https://github.com/SanHacks/AiGen
+With features:
+
+- Text to Speech(GPT Speaks back to you)
+- Speech to Text(You Speak to GPT)
+- Image Generation: Speech & Text Supported
+- Weekly feature update
+
+
+## PHP Version
 **Simplest Setup And Configuration.**
 
 1. Clone the repository
