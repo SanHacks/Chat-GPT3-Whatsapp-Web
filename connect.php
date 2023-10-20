@@ -1,8 +1,8 @@
 <?php
-$host = 'DB_HOST';
-$db   = 'DB_NAME';
-$user = 'DB_USER';
-$pass = 'DB_USER_PASSWORD';
+$host = '127.0.0.1';
+$db   = 'gptchats';
+$user = 'root';
+$pass = 'REUrPRqJ6AujRg2D';
 $port = "3306";//Default
 $charset = 'utf8mb4';//Default
 
@@ -18,4 +18,4 @@ try {
 } catch (\PDOException $e) {
      throw new \PDOException($e->getMessage(), (int)$e->getCode());
 }
-?>
+
